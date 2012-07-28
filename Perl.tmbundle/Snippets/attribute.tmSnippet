@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>content</key>
+    <string><![CDATA[has ${1:attribute} => (
+    is => 'ro',
+    isa => '${2:type}',
+    # coerce => 1,
+    # default => 42,
+    required => 1,
+    lazy_build => 1,
+    # predicate => 'has_$1',
+    # clearer => 'clear_$1',
+);
+]]></string>
+    <key>name</key>
+    <string>attribute</string>
+    <key>tabTrigger</key>
+    <string>has</string>
+    <key>uuid</key>
+    <string>7D024481-97BF-483C-9724-638F7D784BD9</string>
+</dict>
+</plist>
