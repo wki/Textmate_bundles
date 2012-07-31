@@ -2,22 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>content</key>
-    <string><!<CDATA[package `perl -e '$_=$ARGV[0]; s{\A .*/lib/|\.pm \z}{}xmsg; s{/}{::}g; print' $TM_FILEPATH`;
+	<key>content</key>
+	<string>package `perl -e '$_=$ARGV[0]; s{\A .*/lib/|\.pm \z}{}xmsg; s{/}{::}g; print' $TM_FILEPATH`;
 use Moose;
 use namespace::autoclean;
 
 extends '${1:parent}';
 with '${2:role}';
 
-__PACKAGE__->meta->make_immutable;
+__PACKAGE__-&gt;meta-&gt;make_immutable;
 1;
-]]></string>
-    <key>name</key>
-    <string>package</string>
-    <key>tabTrigger</key>
-    <string>package</string>
-    <key>uuid</key>
-    <string>218153C7-4A48-4F90-B8A7-C1B326E9D3B2</string>
+</string>
+	<key>name</key>
+	<string>package</string>
+	<key>scope</key>
+	<string>source.perl</string>
+	<key>tabTrigger</key>
+	<string>package</string>
+	<key>uuid</key>
+	<string>BEE6F495-8A70-4ABE-8FA6-EEF4E0550587</string>
 </dict>
 </plist>
