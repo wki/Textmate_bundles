@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string># read a YAML file and create a (well-sorted) Data::Dumper from it
+#
+perl -MYAML -MData::Dumper -E '%o=(type=&gt;-20, name=&gt;-19, label=&gt;-18, value=&gt;-17, action=&gt;-16, indicator=&gt;-15, auto_fieldset=&gt;-14,auto_id=&gt;-13, attributes=&gt;-12, container_attributes=&gt;-11, filters=&gt;-10, constraints=&gt;-9, model_config=&gt; -8, elements=&gt; 90); $Data::Dumper::Sortkeys=sub{[sort{$o{$a}&lt;=&gt;$o{$b}}keys$_[0]]}; $Data::Dumper::Quotekeys=0; $Data::Dumper::Terse=1; $/=undef; say Dumper Load(&lt;&gt;);' | perltidy</string>
+	<key>input</key>
+	<string>document</string>
+	<key>name</key>
+	<string>convert_yaml_to_perl</string>
+	<key>output</key>
+	<string>replaceDocument</string>
+	<key>uuid</key>
+	<string>B713F5CC-4462-41F2-8848-2B8BF163A150</string>
+</dict>
+</plist>
