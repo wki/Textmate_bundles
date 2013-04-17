@@ -10,8 +10,39 @@ use namespace::autoclean;
 extends '${1:parent}';
 with '${2:role}';
 
+=head1 NAME
+
+`perl -e '$_=$ARGV[0]; s{\A .*/lib/|\.pm \z}{}xmsg; s{/}{::}g; print' $TM_FILEPATH` - blabla
+
+=head1 SYNOPSIS
+
+	# TODO: add example
+
+=head1 DESCRIPTION
+
+TODO: write something
+
+=head1 ATTRIBUTES
+
+=cut
+
+=head1 ATTRIBUTES
+
+=cut
+
 __PACKAGE__-&gt;meta-&gt;make_immutable;
 1;
+
+=head1 AUTHOR
+
+Wolfgang Kinkeldei, E&lt;lt&gt;wolfgang@kinkeldei.deE&lt;gt&gt;
+
+=head1 LICENSE
+
+This library is free software. You can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut
 </string>
 	<key>name</key>
 	<string>package</string>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>=head1 NAME
+
+`perl -e '$_=$ARGV[0]; s{\A .*/lib/|\.pm \z}{}xmsg; s{/}{::}g; print' $TM_FILEPATH` - blabla
+
+=head1 SYNOPSIS
+
+	# TODO: add example
+
+=head1 DESCRIPTION
+
+TODO: write something
+
+=head1 ATTRIBUTES
+
+=cut
+
+=head1 ATTRIBUTES
+
+=cut
+</string>
+	<key>name</key>
+	<string>head</string>
+	<key>scope</key>
+	<string>source.perl</string>
+	<key>tabTrigger</key>
+	<string>=head</string>
+	<key>uuid</key>
+	<string>C547B6A4-6E74-4883-87F1-BD9F6C394C80</string>
+</dict>
+</plist>
